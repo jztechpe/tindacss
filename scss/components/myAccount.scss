@@ -1,0 +1,85 @@
+
+
+.section-myAccount{
+
+    .myAccount-container{
+
+        .order-user-details-information, .order-payment-details-information{
+            .order-details-item{
+                font-size: $font-size-m;
+            }
+        }
+
+        //order details progress
+       
+          
+             .order-progress{
+                 margin-top: 32px;
+                 label{
+                     margin: 0;
+                 }
+                
+             }
+
+             .order-product-details{
+                .order-products-details{
+                    margin-bottom: 16px;
+
+                    &_product-name, &_quantity, &_price, &_state, &_subtotal-label{
+                        font-size: $font-size-s;
+                        @include mq($from: md) {
+                           font-size: $font-size-m;
+
+                        }
+                    }
+
+                    td:nth-child(1){
+                        width: 15%;
+
+                        @include mq($from: md) {
+                            width: 10%;
+
+                        }
+                    }
+                    td:nth-child(2){
+                        width: 25%;
+                        @include mq($from: md) {
+                            width: 40%;
+
+                        }
+                    }
+                }
+             }
+
+
+             .order-products_price-total{
+                 
+                td:nth-child(1){
+                    width: 70%;
+
+                    @include mq($from: md) {
+                        width: 82%;
+
+                    }
+                }
+             }
+
+
+             .address-content{
+                 border-bottom: 1px solid $color-light-forms;
+                 padding-bottom: 1.5rem;
+                 &_item{
+                    margin-bottom: 0.95rem;}
+                    &_label{
+                        display: inline-block;
+                        width: 180px;
+                    }
+   
+                    &_item{
+                        display: inline-block;
+                        
+                    }
+                 
+             }
+    }
+}

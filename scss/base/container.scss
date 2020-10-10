@@ -1,0 +1,59 @@
+.container{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+
+    &-fluid{
+        max-width: none;
+        width: 100%;
+    }
+}
+
+
+@include respond(mobile){
+   .container{
+       max-width: 100%;
+       margin: 0 auto;
+   }
+}
+
+@include respond(portraid){
+  .container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+}
+
+@include respond(tabletland){
+  .container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+}
+
+
+@include respond(tablet){
+  .container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+}
+
+@include respond(desktop){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@include respond(min-desktop){
+    .container{
+      max-width: 1280px;
+    }
+  }
+
+@include respond(big-desktop){
+    .container{
+      max-width: 1280px;
+    }
+  }

@@ -1,0 +1,52 @@
+/*@mixin respond ($breakpoint) {
+    @if $breakpoint == mobile{
+        @media (min-width: 320px){@content};
+    }
+
+    @if $breakpoint == tablet{
+        @media (min-width: 768px) {@content};
+    }
+    @if $breakpoint == min-desktop{
+        @media (min-width: 980px) {@content};
+    }
+
+    @if $breakpoint == desktop{
+        @media (min-width: 1440px ){@content};
+    }
+
+    @if $breakpoint == big-desktop{
+        @media (min-width: 1800px){@content};
+    }
+}
+*/
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint == min-mobile{
+        @media (max-width: 320px) {@content};
+    }
+    @if $breakpoint == mobile{
+        @media (max-width: 480px) {@content};
+    }
+
+    @if $breakpoint == portraid{
+        @media (min-width: 481px) and (max-width: 768px) {@content};
+    }
+    @if $breakpoint == tabletland{
+        @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {@content};
+    }
+
+    @if $breakpoint == tablet{
+        @media (min-width: 769px) and (max-width: 1024px) {@content};
+    }
+    @if $breakpoint == min-desktop{
+        @media (min-width: 1025px) {@content};
+    }
+
+    @if $breakpoint == desktop{
+        @media (min-width: 1281px){@content};
+    }
+
+    @if $breakpoint == big-desktop{
+        @media (min-width: 1800px){@content};
+    }
+}

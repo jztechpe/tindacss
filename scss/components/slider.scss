@@ -1,0 +1,114 @@
+$slider-color-dot: #9d9d9d !default;
+$slider-color-dot-active: #6a6868 !default;
+$slider-color-thumbnail: #d5d5d5 !default;
+$slider-color-thumbnail-active: #929292 !default;
+
+.slider {
+    &.is-full-width .slider-item img {
+        width: 100%;
+    }
+
+    .slider-item {
+        line-height: 0;
+    }
+
+    .slider-pages {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+        justify-content: center;
+    }
+
+    .slider-dot {
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        border: none;
+        background-color: $slider-color-dot;
+        margin: 5px 0;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        &-active,
+        &.tns-nav-active {
+            background-color: $slider-color-dot-active;
+        }
+    }
+
+    .slider-thumbnail {
+        display: inline-block;
+        line-height: 0;
+        border: 1px solid #e9e9e9;
+        cursor: pointer;
+
+        &.tns-nav-active {
+            border-color: $slider-color-thumbnail-active;
+        }
+    }
+
+    .slider-prev,
+    .slider-next {
+        position: absolute;
+        top: calc(50% - 50px);
+        background: white;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        border: 1px solid #d5d5d5;
+    }
+
+    .slider-prev {
+        left: 0;
+    }
+
+    .slider-next {
+        right: 0;
+    }
+}
+
+.slider.product-slider {
+    position: relative;
+
+    .slider-pages {
+        padding: 10px 0;
+        justify-content: start;
+    }
+
+    .slider-item {
+        border: 1px solid $slider-color-thumbnail;
+        height: 320px;
+
+        > img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @include mq($from: xl) {
+            height: 400px;
+         }
+    }
+
+    .slider-thumbnail {
+        width: 60px;
+        height: 60px;
+
+        > img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+include _mixins.pug
+
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='robots' content='index, follow')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='description' content= description)
+    meta(name='author' content='Yan Zhu')
+    meta(property='og:url' content= url)
+    meta(property='og:title' content= title)
+    meta(property='og:description' content= description)
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:site' content='@spectrecss')
+    meta(name='twitter:creator' content='@picturepan2')
+    link(rel='shortcut icon' href='../img/favicons/favicon.ico')
+    link(rel='icon' href='../img/favicons/favicon.png')
+    link(rel='shortcut icon' href='img/favicons/favicon.ico')  
+    link(rel='icon' href='img/favicons/favicon.png')  
+    link(rel='stylesheet' href='https://picturepan2.github.io/spectre/dist/spectre-exp.min.css')
+    link(rel='stylesheet' href='https://picturepan2.github.io/spectre/dist/docs.min.css')
+    link(rel='stylesheet' href='/css/main.css') 
+    link(rel='stylesheet' href='/css/lifemiles.css') 
+    <!-- link(rel='stylesheet' href='https://cdn.juntoz-staging.com/ux-lifemiles/Ecommy/main.css') -->
+    link(rel='canonical' href= url)
+
+  body    
+    .docs-container.off-canvas.off-canvas-sidebar-show
+      .docs-navbar
+        a.off-canvas-toggle.btn.btn-link.btn-action(href='#sidebar')
+          i.icon.icon-menu
+        .btns.d-flex
+          input.docs-search.form-input(type="text" placeholder="Search Docs")
+          a.btn.ml-1(href='https://www.paypal.me/picturepan2' target='_blank') PayPal
+          a.btn.btn-primary.ml-1(href='https://github.com/picturepan2/spectre' target='_blank') GitHub
+
+      #sidebar.docs-sidebar.off-canvas-sidebar
+        .docs-brand
+          a.docs-logo(href='../index.html')
+            h2 Ecommy
+            small.label.label-secondary.text-bold DOCS
+
+        .docs-nav
+          .accordion-container
+            +docs-accordion(
+              'getting-started',
+              'Getting started',
+              {url: 'installation', name: 'Installation'}
+            )
+            +docs-accordion(
+              'components',
+              'Components',
+              {url: '/pages/components/input-counter', name: 'Input Counter'},              
+              {url: '/pages/components/inline-select', name: 'Inline Select'}
+            )
+
+      a.off-canvas-overlay(href='#close')
+      .off-canvas-content
+        #content.docs-content
+          block content

@@ -1,0 +1,79 @@
+.collapse {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    border-radius: 3px;
+    text-align: left;
+
+    &-item-title::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        transform: translateY(-50%) rotate(180deg);
+        width: 16px;
+        height: 18px;
+        // TODO: Revive
+        // background-image: url(../JuntozEcomLibrary/scss/icons/minus.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        transition: all 0.3s linear;
+    }
+}
+
+// Modifiers
+.collapse-close {
+    .collapse-item-title::after {
+        transform: translateY(-50%) rotate(0deg);
+
+        width: 16px;
+        height: 18px;
+        //background-image: url(../scss/icons/plus.svg);
+        // TODO: Revive
+        // background-image: url(../JuntozEcomLibrary/scss/icons/plus.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.collapse-item-title {
+    position: relative;
+    transition: all 0.4s linear;
+    background-color: $color-forms;
+    padding: 0.75rem 1rem;
+    color: $color-secondary-dark;
+    font-weight: 400;
+}
+
+.collapse.open .collapse-item-title {
+}
+
+.collapse.open .collapse-item-title::after {
+    transform: translateY(-50%) rotate(180deg);
+    width: 16px;
+    height: 18px;
+    // TODO: Revive
+    // background-image: url(../LifemilesTheme/src/icons/minus.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.collapse-item-content {
+    // padding-left: 14px;
+    // margin-top: 20px;
+}
+
+.collapse-item-content-inner {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #535353;
+
+    ul,
+    li {
+        list-style: disc;
+    }
+}

@@ -1,0 +1,35 @@
+.navigation{
+   &-button{
+       background-color: $color-white;
+       width: 34px;
+       height: 34px;
+       border-radius: 3px;
+       border:1px solid $color-forms;
+       cursor: pointer;
+       text-align: center;
+   }
+   &-icon{
+       position: relative;
+       margin: 15px 6px;
+       border-radius: 20px;
+       &,
+       &::before,
+       &::after{
+           width: 21px;
+           height: 2px;
+           background-color: $color-text-grey;
+           display: inline-block;
+       }
+
+       &::before,
+       &::after{
+           content: "";
+           position: absolute;
+           left: 0;
+           transition: all .2s;
+       }
+
+       &::before{top:-6px;}
+       &::after{top:6px;}
+   }
+}

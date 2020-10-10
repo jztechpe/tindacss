@@ -1,0 +1,45 @@
+.loading-icon {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    
+    &_dot{
+        position: absolute;
+		animation: up 1.2s alternate infinite;
+        width: 8px;
+        height: 8px;
+        background-color: #ccc;
+        border-radius: 50%;
+
+        &.is-1 {
+            left: -20px;
+        }
+        &.is-2 {
+            animation-delay: .4s;
+        }
+        &.is-3 {
+            right: -20px;
+            animation-delay: .8s;
+        }
+    }
+}
+
+@keyframes up {
+	50% {
+		top: 0;
+		background-color: #ccc;
+	}
+	100% {
+		top: -20px;
+		background-color: $color-primary;
+	}
+}
+
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }

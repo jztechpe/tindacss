@@ -1,0 +1,54 @@
+.widget {
+  margin-bottom: 1.5rem;
+
+  &_title {
+    position: relative;
+    text-align: center;
+    color: $color-text-light;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 15%;
+      position: absolute;
+      top: 50%;
+      border-top: 1px solid $color-forms;
+
+      @include mq($from: md){
+        width: 30%;
+      }
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  &_item-img {
+    width: 100%;
+  }
+}
+
+//Image block slider
+.widget-image-block-slider {
+  .slider-items {
+    .slider-item {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// About us
+.widget-aboutus {
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@juntoz/tinda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server",
+    "build": "webpack --config ./webpack.config.js",
+    "watch": "webpack --watch",
+    "docs:build": "pug docs/src --out ./docs/dist && sass ./docs/src/scss/main.scss ./docs/dist/css/main.css",
+    "docs:dev": "concurrently --kill-others \"reload -b --dir ./docs/dist live-server\"  \"pug docs/src --out ./docs/dist --watch\" \"sass ./docs/src/scss/main.scss ./docs/dist/css/main.css --watch\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass-mq": "^5.0.1",
+    "style-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.3.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "jstransformer-highlight": "^2.0.0",
+    "jstransformer-markdown-it": "^2.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "reload": "^3.1.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

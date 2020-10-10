@@ -1,0 +1,84 @@
+.steps-segment {
+    position: relative;
+}
+.steps:not(.is-hollow) .steps-marker:not(.is-hollow) {
+    border:2px solid $color-interface;
+    background-color: $background-color;
+    color: #fff;
+    
+    &::after{
+        content: '✓';
+font-size: 19px;
+padding: 5px;
+color: $color-interface;
+    }
+}
+
+.steps:not(.is-hollow) .steps-segment.is-active .steps-marker:not(.is-hollow) {
+    border:2px solid $color-interface;
+    background-color: $background-color;
+    color: #fff;
+    
+}
+
+.steps:not(.is-hollow) .steps-segment.is-active ~ .steps-segment .steps-marker:not(.is-hollow) {
+    border:2px solid #dbdbdb;
+    background-color: $background-color;
+    color: rgba(0,0,0,0.7);
+
+    &::after{
+        content: '';
+font-size: 19px;
+padding: 5px;
+color: $color-interface;
+    }
+}
+
+.steps-marker {
+    height: 2rem;
+    width: 2rem;
+}
+
+.steps-marker {
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    font-weight: 700;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.steps.is-vertical .steps-content {
+    margin-left: calc(1rem + .5em);
+    margin-top: -2rem;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    min-height: 70px;
+}
+
+.steps.is-vertical .steps-segment:not(:last-child):after {
+    bottom: -.24rem;
+    left: calc(1rem - (.2em));
+    top: 1.76rem;
+    width: .2em;
+}
+
+.steps-segment:not(:last-child):after {
+    content: " ";
+    display: block;
+    position: absolute;
+}
+
+.steps-segment:after {
+    background-color:$color-interface;
+}
+
+.steps-segment.is-active:after {
+    background-color: #dbdbdb;
+    
+}
+
+.steps-segment.is-active ~ .steps-segment:after {
+    background-color: #dbdddb;
+}

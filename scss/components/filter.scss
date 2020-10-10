@@ -1,0 +1,53 @@
+.filter{
+    &-container{
+        background-color: $color-white;
+        padding: 20px;
+        height: 100%;
+        border-radius: 4px;
+    }
+   
+    &-mobile{
+        background-color: $color-forms;
+        height: 39px;
+        display: block;
+        text-align: center;
+        padding: 9px;
+        color: $color-text;
+        font-size: $font-size-m;
+
+        ion-icon{
+            vertical-align: middle;
+        }
+
+        span{
+            vertical-align: text-top;
+        }
+    }
+
+   
+
+    
+}
+
+.mobile-filter{
+    display: block;
+
+    @include mq($from: lg) {
+        display: none;
+     }
+}
+
+.desktop-filter{
+    display: none;
+
+    @include mq($from: lg) {
+        display: block;
+     }
+}
+
+
+
+ 
+ 
+ 
+ 

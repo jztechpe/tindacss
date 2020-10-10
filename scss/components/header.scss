@@ -1,0 +1,147 @@
+// Header Component
+// -----------------------------------------------------------------------------
+
+.header {
+    --_header-height: #{$header-height};
+}
+
+.header {
+    min-height: var(--_header-height);    
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        min-height: var(--_header-height);
+        padding: 0.75rem;
+
+        @include mq($from: xl) {
+            grid-template-columns: auto 1fr auto;
+        }
+    }
+
+    &-menu {
+        display: inline-block;
+        padding-right: 0.75rem;
+
+        #menu-vue {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        @include mq($from: xl) {
+            padding-right: 1rem;
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    &-logo {
+        display: inline-block;
+        vertical-align: middle;
+        width: 82px;
+    }
+
+    &-items {
+        @include mq($from: xl) {
+            order: 2;
+        }
+    }
+
+    &-actions-item {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: 0.75rem;
+        }
+
+        &:hover {
+            p {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-search {
+        grid-column: 1 /-1;
+        padding: 0;
+        margin-top: 0.75rem;
+
+        @include mq($from: xl) {
+            grid-column: unset;
+            padding: 0 1rem;
+            margin-top: 0;
+        }
+    }
+}
+
+// Header Items
+// -----------------------------------------------------------------------------
+.header-items {
+}
+
+// Header Item
+// -----------------------------------------------------------------------------
+.header-item {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-right: 0.75rem;
+    }
+
+    &:hover {
+        .header-item_text {
+            color: $color-primary;
+        }
+    }
+
+    &_text {
+        margin: 0;
+        font-size: $font-size-s;
+        color: $color-text-grey;
+    }
+
+    &_icon {
+        color: $color-primary;
+        font-size: 24px;
+    }
+}
+
+// Top Header Component
+// -----------------------------------------------------------------------------
+
+.top-header {
+    &-container {
+        background-color: $background-color;
+
+        p {
+            padding: 8px 0;
+
+            a {
+                color: $color-interface;
+
+                ion-icon {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// My Account Header Component
+// -----------------------------------------------------------------------------
+.header {
+    &-myAccount {
+        background-color: $color-gold;
+        min-height: 75px;
+        .header-content {
+            min-height: 75px;
+        }
+    }
+}

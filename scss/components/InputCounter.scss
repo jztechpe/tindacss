@@ -1,0 +1,19 @@
+.input-counter {
+    &_button {
+        width: 1.75rem;
+        height: 1.75rem;
+        background-color: $color-text-light;
+        border-radius: 100%;
+        color: $color-white;
+
+        &--disabled {
+            background-color: #cdd1d3;
+            cursor: not-allowed;
+        }
+    }
+
+    &_value {
+        font-size: $font-size-l;
+        margin: 0 10px;
+    }
+}

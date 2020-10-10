@@ -1,0 +1,49 @@
+.pagination{
+    display: flex;
+    
+   font-size: $font-size-m;
+    border-radius: 4px;
+    &-arrows{
+        background-color: $color-interface;
+        padding: 13px 0px;
+        border-radius: 4px 0 0 4px;
+        .arrow{
+            margin: auto;
+            color: $color-white;
+            padding: 0 12px;
+          }
+          &.right{
+            border-radius: 0 4px 4px 0;
+        }
+
+        @include mq($from: lg) {
+            padding: 16px 0px;
+         }
+    }
+   
+
+    &-container{
+        padding: 5px;
+        background-color: $color-white;
+        width: 100%;
+        justify-content: center;
+    display: flex;
+    
+        a{
+            float: left;
+            padding: 8px 14px;
+            text-decoration: none;
+          
+
+            &.active{
+                background-color: $color-interface;
+                border-radius: 100%;
+                color: $color-white;
+            }
+        }
+
+        ion-icon{
+            vertical-align: middle;
+        }
+    }
+}

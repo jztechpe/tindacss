@@ -1,0 +1,50 @@
+.select-list{
+    margin-bottom: 1rem;
+
+    &_label{
+        display: block;
+        font-size: .8rem;
+    }
+
+    &_content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &.is-disabled {
+        opacity: 0.5;
+    
+        * {
+          cursor: not-allowed;
+        }
+      }
+
+    &_item{
+        padding: 9px 10px;
+        box-sizing: border-box;
+        font-size: $font-size-l;
+        width: auto;
+        min-width: 44px;
+        height: 41px;
+        line-height: 19px;
+        font-weight: $font-weight-medium;
+        border-radius: 3px;
+        margin: 0 8px 8px 0;
+        color: $color-text-grey;
+        border: 1.1px solid #e6e6e6;
+        background-color: #f9f9f9;
+
+        &.is-selected{            
+            border-color: $color-interface;
+            color: $color-interface;
+        }
+
+        &.is-disabled{            
+            border-color: #a7a7a7;
+            color: #a7a7a7;
+            background-color: #e3e3e3;
+            cursor: not-allowed;
+        }
+    }
+
+}

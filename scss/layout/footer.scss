@@ -1,0 +1,128 @@
+// TODO: move to Lifemiles project?
+.footer-section {
+    background-color: $color-white;
+    border-top: 1px solid $color-light-forms;
+    z-index: $z-index-1;
+
+    @include mq($from: lg) {
+        padding: 40px 0 0;
+        border-bottom: 1px solid $color-light-forms;
+    }
+
+    .footer-header {
+        @include mq($from: lg) {
+            border-bottom: 1px solid $color-light-forms;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.footer-item {
+    padding: 0;
+
+    @include mq($from: lg) {
+        padding-right: 0.75rem;
+    }
+
+    .footer-item_head {
+        border-bottom: 1px solid $color-light-forms;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1rem;
+
+        @include mq($from: lg) {
+            font-size: $font-subtitle-s;
+            border-bottom: unset;
+            padding: 0;
+        }
+    }
+
+    .footer-item_title {
+        font-size: $font-size-l;
+        color: $color-text;
+    }
+
+    .footer-item_content {
+        display: none;
+        border-bottom: 1px solid $color-light-forms;
+        padding: 0.75rem 1rem;
+
+        @include mq($from: lg) {
+            display: block;
+            border-bottom: unset;
+            padding: 0;
+            margin-top: 1.25rem;
+        }
+    }
+
+    .footer-item_link {
+        line-height: 2;
+        font-size: $font-size-m;
+        color: $color-text-grey;
+
+        &:hover {
+            color: $color-interface;
+        }
+    }
+
+    .icon::after {
+        content: "";
+        transform: rotate(-90deg);
+        width: 18px; // Must be 24px
+        height: 18px;
+        // TODO: Repair
+        // background-image: url(../JuntozEcomLibrary/scss/icons/chevron-down.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.3s linear;
+
+        // Not show icons on desktop
+        @include mq($from: lg) {
+            content: none;
+        }
+    }
+
+    // Modifiers
+    &.is-active {
+        .icon::after {
+            transform: rotate(0);
+            //TODO: Repair
+            // background-image: url(../JuntozEcomLibrary/scss/icons/chevron-down.svg);
+        }
+
+        .footer-item_content {
+            display: block;
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size-s;
+    padding: 1rem;
+    justify-content: center;
+
+    @include mq($from: lg) {
+        padding: 1rem 0;
+        justify-content: normal;
+    }
+
+    &_copyright {
+        color: $color-text-grey;
+        @include mq($from: lg) {
+            flex-grow: 1;
+        }
+    }
+
+    &_complaints {
+        text-align: center;
+
+        @include mq($from: lg) {
+            flex-grow: 1;
+        }
+    }
+}

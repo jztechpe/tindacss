@@ -1,0 +1,33 @@
+.tabs-vertical{
+    &-body{
+        &_item{
+            display: block;
+            padding: 10px 16px;
+            &:hover{
+                background-color: #E7E7E7;
+            }
+            
+        }
+
+        .tab-selected{
+            background-color: #E7E7E7;
+           
+        }
+
+        .hide{
+            display: none;
+        }
+    }
+}
+
+.tabsContent{
+    display: none;
+}
+
+.tabsContent_block{
+    display: block;
+}
+
+
+
+

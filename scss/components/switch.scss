@@ -1,0 +1,66 @@
+@mixin transitions($time) {
+    -webkit-transition: $time;
+    transition: $time;
+  }
+  
+  @mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+  }
+  
+  
+  .switch-container {
+    @include dimensions(79px, 34px);
+    display: inline-block;
+    position: relative;
+  }
+  
+  .switch {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+    &:checked + .slider:before {
+      -webkit-transform: translateX(42px);
+      -ms-transform: translateX(42px);
+      transform: translateX(42px);
+    }
+    
+  }
+  
+  .switch-slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    @include transitions(.4s);
+    
+    &:before {
+      position: absolute;
+      border-radius: 10%;
+      content: "";
+      left: 6px;
+      bottom: 5px;
+      @include dimensions(25px, 25px);
+      @include transitions(.4s);
+    }
+  }
+  
+  .sl-1, .sl-2, .sl-3, .sl-4 {
+    background-color: #ccc;
+    &:before {
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+  
+  .sw-1:checked + .slider {
+    background-color: $color-interface;
+  }
+
+  
+  
+  
+  

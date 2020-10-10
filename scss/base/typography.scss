@@ -1,0 +1,94 @@
+
+
+h1{
+    font-size: 32px;
+    line-height: 34px;
+}
+h2{
+    font-size: 26px;
+    line-height: 28px;
+}
+h3{
+    font-size: 22px;
+    line-height: 24px;
+}
+h4{
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.medium{
+    font-weight: 500 !important;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.regular{
+    font-weight: 300;
+}
+
+.uline{
+    text-decoration: underline;
+}
+
+//Subtitle
+
+.subtitle{
+    
+    &-m{
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    &-s{
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+
+//Paragraph
+
+.paragraph{
+    &-l{
+        font-size: 16px;
+       line-height: 24px;
+    }
+    &-m{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &-s{
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
+
+.link{
+  
+    &-l{
+        font-size:15px;
+        line-height: 22px;
+    }
+    &-m{
+        font-size:13px;
+        line-height: 20px; 
+        font-weight: 700;
+    }
+    &-s{
+        font-size:11px;
+        line-height: 18px;
+    }
+}
+
+
+@include respond(mobile){
+   h1{
+       font-size: 24px;
+   }
+
+   h2{
+       font-size: 19px;
+   }
+}

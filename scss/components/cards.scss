@@ -1,0 +1,309 @@
+.card {
+    width: 100%;
+    background-color: $color-white;
+     border-radius: 4px;
+
+    &-content{
+        padding: 16px 16px;
+    }
+    &-image {
+        text-align: center;
+    }
+
+    &-footer{
+        border-top: 0.5px solid $color-light-forms;
+    }
+
+    &-detail{
+        border-bottom: 0.5px solid $color-light-forms;
+        margin-top: 16px;
+
+        &_title{
+            text-transform: uppercase;
+            color:$color-secondary-dark ;
+            font-size: $font-size-m;
+            font-weight: $font-weight-demibold;
+            padding: 12px 16px;
+        }
+    }
+
+    .store-name {
+        font-size: $font-size-s;
+        font-weight: $font-weight-demibold;
+        color:$color-text;
+    }
+
+    .product-name {
+        font-size: $font-size-s;
+        font-weight: $font-weight-regular;
+        color:$color-text;
+    }
+
+    .product-price {
+        font-size: $font-size-l;
+        font-weight: $font-weight-demibold;
+        margin-top: 8px;
+        color: $color-text;
+    }
+
+    .dsct-label{
+        color:$color-secondary;
+        font-weight: $font-weight-regular;
+    }
+
+    .product-price-before {
+        color: $color-text-light;
+        font-size: $font-size-s;
+        font-weight: $font-weight-regular;
+        text-decoration: line-through;
+    }
+
+   
+
+    &-cart-product {
+    //     display: flex;
+    // margin-bottom: 1px;
+    // padding: 16px;
+        &-image {
+            margin-right: 20px;
+            @include mq($from: md) {
+                flex-grow: 1;
+                margin: 0;
+            }
+        }
+        &-content {
+            @include mq($from: md) {
+                display: flex;
+                flex-direction: row;
+                margin: auto 0;
+                flex-grow: 5;
+    
+                .product-info {
+                    order: 1;
+                    flex-grow: 2;
+                    max-width: 300px;
+                    .store-name {
+                        font-size: $font-size-m;
+                        margin-bottom: 4px;
+                    }
+    
+                    .product-name {
+                        font-size: $font-size-m;
+                    }
+                }
+    
+                .product-quantity-price {
+                    order: 2;
+                    flex-grow: 2;
+    
+                    .product-quantity {
+                        margin-top: 0px;
+                        margin: auto;
+                    }
+                }
+    
+                .product-prices {
+                    order: 3;
+                    width: 20%;
+    
+                    .product-price {
+                        margin-top: 0px;
+                    }
+                }
+             }
+            
+        }
+
+        &-delete {
+            .delete-button {
+                font-size: $font-size-s;
+                text-decoration: underline;
+                color: $color-text-light;
+            }
+            @include mq($from: md) {
+                margin: auto;
+                flex-grow: 1;
+            }
+         
+        }
+    }
+
+    &-shadow{
+       box-shadow: $box-shadow;
+
+    }
+
+    &-product-total {
+        .price-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+            label {
+                font-size: $font-size-l;
+            }
+
+            .total {
+                font-size: $font-subtitle-s;
+                font-weight: $font-weight-bold;
+                color: $color-primary;
+                text-align: right;
+            }
+        }
+    }
+
+    &-catalog{
+        position: relative;
+        height: 100%;
+        
+        .card-image {
+           img{
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+
+            @include mq($from: xl) {
+                width: 100%;
+                height: 180px;
+               object-fit: cover;
+             
+           }
+           }
+
+           
+        }
+        &-content{
+            text-align: center;
+            padding: 16px;
+
+            .product-info{
+                .store-name {
+                    
+                    @include mq($from: xl) {
+                        font-size: $font-size-m;
+                    margin-bottom: 4px;
+
+                     }
+                }
+
+                .product-name{
+                    max-height: 38px;
+                    overflow: hidden;
+                    max-width: 191px;
+                    text-overflow: ellipsis;
+                    margin: auto;
+
+                    @include mq($from: xl) {
+                        font-size: $font-size-m;
+                     }
+                }
+    
+            }
+
+           
+
+            .product-prices{
+                .product-price{
+                    font-size: $font-size-s;
+                    color: $color-primary;
+
+                    @include mq($from: xl) {
+                        font-size: $font-size-l;
+                     }
+                }
+                .product-price-before{
+                    font-size: $font-size-s;
+
+                    @include mq($from: xl) {
+                        font-size: $font-size-m;
+                     }
+                }
+            }
+        }
+
+        .product-prices{
+            margin-top: 8px;
+            .product-price{
+                margin-top: 0;
+            }
+        }
+    }
+
+    &-product-widget{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+        &_content{
+            text-align: center;
+
+            .product-widget{
+                &_info{
+                    .product-name{
+                        font-size: $font-size-m;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Pasar a proyecto LifeMiles
+
+.productCardWidget{
+    display: flex;
+    
+    .card-product-widget{
+        width: 200px;
+        margin-right: 20px;
+        background-color: $color-white;
+        border-radius: 3px;
+
+        &:last-child{
+            margin-right: 0px;
+        }
+
+        &_image{
+          text-align: center;
+            .image-product-widget{
+                object-fit: cover;
+                height: 130px;
+                width: 200px;
+            }
+        }
+
+        &_body{
+            padding: 12px 16px;
+            max-height: 85px;
+        }
+        &_content{
+           .product-widget{
+               &_info{
+                   .store-name{
+                    font-size: $font-size-m;
+                   font-weight: $font-weight-demibold;
+                   margin-bottom: 4px;
+                   }
+                   
+               }
+            }
+        }
+
+        &_footer{
+            border-top: 1px solid $color-light-forms;
+            text-align: center;
+
+            .product-widget_prices{
+                padding: 12px 16px;
+            label{
+                margin: 0;
+            }
+                .redemption-price{
+                    font-size: $font-size-xl;
+                    font-weight: $font-weight-demibold;
+                }
+            }
+        }
+    }
+}
+
+
+
+

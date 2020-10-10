@@ -1,0 +1,82 @@
+.catalog-products-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px 1px;
+
+    @include mq($from: xl) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include mq($from: lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+// TODO: Delete it
+.catalog-quantity {
+    padding: 0px 16px;
+    @include mq($from: xl) {
+        padding: 2px 16px;
+    }
+    p {
+        color: $color-text-grey;
+        font-size: $font-size-s;
+        @include mq($from: xl) {
+            font-size: $font-size-m;
+        }
+
+        strong {
+            font-weight: $font-weight-medium;
+        }
+    }
+}
+
+.catalog-product-dsct {
+}
+
+.card-product-total {
+    box-shadow: $box-shadow;
+}
+
+.catalog-item {
+    &_badge-region {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: $z-index-2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &_badge {
+        background-color: $color-primary;
+        padding: 0px 12px;
+        // border-radius: 0px 4px 0 0;
+        color: $color-white;
+        font-size: $font-size-s;
+
+        @include mq($from: xl) {
+            font-size: $font-size-m;
+        }
+
+        &.is-discount {
+            background-color: $color-primary;
+        }
+
+        &.is-out-of-stock {
+            background-color: #656970;
+        }
+    }
+
+    // Modifiers
+    &.is-out-of-stock {
+        .card-image {
+            opacity: 0.75;
+        }
+
+        .card-catalog-content{
+            opacity: 0.65;
+        }
+    }
+}

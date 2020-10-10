@@ -1,0 +1,27 @@
+.shop-categories{
+    background-color: $color-white;
+    padding: 20px;
+    height: 100%;
+    border-radius: 4px;
+    
+   
+    &-mobile{
+        background-color: $color-interface;
+        height: 39px;
+        padding: 11px 15px;
+        color: $color-white;
+        font-size: $font-size-m;
+        border-radius: 4px;
+        margin-bottom: 12px;
+
+        ion-icon{
+            vertical-align: middle;
+        }
+
+        span{
+            vertical-align: text-top;
+        }
+    }
+}
+
+

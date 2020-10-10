@@ -1,0 +1,46 @@
+extends ../../shared/_layout.pug
+
+block content
+    +docs-heading('inline-select', 'Inline Select')
+        p Component with input to choose numeric values and describe quantity.
+
+        div.result
+            <section class="select-list">
+                <label class="select-list_label">Size</label>
+                <div class="select-list_content">
+                    <button class="select-list_item">XS</button>
+                    <button class="select-list_item is-selected">S</button>
+                    <button class="select-list_item">M</button>
+                    <button class="select-list_item">L</button>
+                    <button class="select-list_item is-disabled">XL</button>
+                </div>
+            </section>
+
+        p
+            | You can add #[code is-active] class to disable each button. 
+
+        pre.code(data-lang='HTML')
+            code
+                :highlight(lang="html")
+                    <section class="select-list">
+                        <label class="select-list_label">List</label>
+                        <div class="select-list_content">
+                        <button class="select-list_item">{{item[itemValue]}}</button>
+                        </div>
+                    </section>
+
+        h4 Use with colors
+
+        h4 Use with images
+        
+        div.result
+            <section class="select-list">
+                <label class="select-list_label">Size</label>
+                <div class="select-list_content">
+                    <button class="select-list_item">XS</button>
+                    <button class="select-list_item is-selected">S</button>
+                    <button class="select-list_item">M</button>
+                    <button class="select-list_item">L</button>
+                    <button class="select-list_item is-disabled">XL</button>
+                </div>
+            </section>

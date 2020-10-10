@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../LifemilesTheme/dist/main.css">
+
+    
+</head>
+<body>
+    <header class="header header-myAccount">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-navigation">
+                   
+    
+                    <div class="header-logo">
+                        <a href="#">
+                            <img class="header-logo" src="/LifemilesTheme/src/images/logo-white.svg" alt="Lifemiles">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="header-actions">
+                    <a href="#" class="header-actions-item text-center">
+                        <ion-icon name="person-outline" class="header-actions-icon"></ion-icon>
+                        <p class="paragraph-s regular text-white">Maximiliano</p>
+                    </a>
+    
+                    <a href="#" class="header-actions-item auto text-center">
+                        <ion-icon name="cart-outline" class="header-actions-icon"></ion-icon>
+                        <p class="paragraph-s regular text-white">Mi Carrito</p>
+                    </a>
+                </div>
+                <div class=""></div>
+    
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="section-myAccount">
+          <div class="container ">
+             <div class="myAccount-container">
+                <div class="columns">
+                     <div class="column">
+                        <div class="card card-shadow ">
+                            <div class="card-content d-flex">
+                                <div class="avatar mr-3">
+                                    <span class="avatar-span ">ML</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="myAccount-user-name">Maximiliano Lopez</p>
+                                <p class="myAccount-user-miles  ">Tienes <strong class="miles-quantity">LM 50,000</strong> millas disponibles</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                     </div>
+                </div>
+
+                <div class="myAccount-categories">
+                    <div class="columns ">
+                        <div class="column is-3 ">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h4>Mi cuenta</h4>
+                                </div>
+                                <div class="card-body">
+                                   <div class="tabs-vertical">
+                                       <div class="tabs-vertical-body">
+                                        <a class="tabs-vertical-body_item tab-selected" onclick="openTab(event, 'myOrders')" >Mis ordenes</a>
+                                        <a class="tabs-vertical-body_item " onclick="openTab(event, 'settings')" >Ajustes de Cuenta</a>
+                                        <a class="tabs-vertical-body_item " onclick="openTab(event, 'addresses')">Administrar direcciones</a>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column ">
+                            <div id="myOrders" class="tabsContent tabsContent_block" >
+                            <h3 class="mb-4">Mis Ordenes</h3>
+                            <div class="orders-content">
+                            <div class="card ">
+                                <div class="card-content ">
+                                    <div class="card-body d-flex">
+                                        <div class="order-details-number">
+                                            <label for="">Número de Orden</label>
+                                            <p class="order-details-number_code">200612548941-001</p>
+                                            <p class="order-details-number_group">Grupo 200612548941 </p>
+                                        </div>
+                                        <div class="order-details-price">
+                                            <p class="order-details-price_total">Total: <span> LM 2,500</span></p>
+                                            <p class="order-details-price_date">Fecha de compra: 24/06/2020 </p>
+                                        </div>
+                                    </div>
+  
+                                </div>
+                                <div class="card-footer ">
+                                    <div class="card-content d-flex w100">
+                                        <div class="order-status">
+                                            <p class="order-status_state delivered">Orden Entregada</p>
+                                            <p class="order-status_date">Fecha de entrega: 30/06/2020</p>
+                                        </div>
+                                        <div class="order-details-button">
+                                            <a href="details_MyOrders.html" class="button button-outline size-m">Ver detalle</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  id="settings" class="tabsContent">
+                      <div class="account-settings">
+                        <h3 class="mb-4">Ajustes de Cuenta</h3>
+                        <div class="card">
+                            <div class="card-detail">
+                             <p class="card-detail_title">INFORMACION DEL USUARIO</p>
+                            </div>
+
+                            <div class="card-content">
+                                <label for="">Nombre</label>
+                                <p class="account-settings-item">Maximiliano Lopez</p>
+
+                                <label for="">Email</label>
+                                <p class="account-settings-item">maxlopez@test.com</p>
+
+                                <label for="">Contraseña</label>
+                                <a class="account-settings-item  account-settings-password" href="changepassword.html">Cambiar contraseña</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-detail">
+                             <p class="card-detail_title">Datos del usuario</p>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form edit-form"  placeholder="Text" value="Maximiliano " disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Apellido</label>
+                                    <input type="text" class="form edit-form" placeholder="Text" value="Lopez" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Correo</label>
+                                    <input type="text" class="form" placeholder="Text" value="maxlopez@test.com" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Celular</label>
+                                    <input type="text" class="form edit-form" placeholder="Text" value="987494333" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label is-block">Fecha de Nacimiento</label>
+                                    <div class="select" >
+                                        <select class="edit-form" disabled>
+                                          <option>1</option>
+                                          <option>2</option>
+                                        </select>
+                                      </div>
+                                      <div class="select">
+                                        <select class="edit-form" disabled>
+                                          <option>1</option>
+                                          <option>2</option>
+                                        </select>
+                                      </div>
+                                      <div class="select">
+                                        <select class="edit-form" disabled>
+                                          <option>1</option>
+                                          <option>2</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <a href="#"  class="button button-primary size-m" id="edit-button" >Editar información</a>
+                                
+                                
+                            </div>
+                        </div>
+                      </div>
+   
+                    </div>
+
+
+                    <div id="addresses" class="tabsContent " >
+                        <h3 class="mb-4">Administrar Direcciones</h3>
+                        
+                            <div class="card">
+                                <div class="card-detail">
+                                 <p class="card-detail_title">Dirección por defecto</p>
+                                </div>
+    
+                                <div class="card-content">
+                                    <div class="address-content">
+                                   <div class="adress-content_item">
+                                    <label class="address-content_label" for="">Nombre</label>
+                                    <p class="address-content_item">Maximiliano Lopez</p>
+                                   </div>
+
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Celular</label>
+                                    <p class="address-content_item">98451238431</p>
+                                    </div>
+                                    
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Municipio</label>
+                                    <p class="address-content_item">Municipio Name</p>
+                                    </div>
+                                    
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Departamento</label>
+                                    <p class="address-content_item">Departamento Name</p>
+                                    </div>
+
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Dirección</label>
+                                        <p class="address-content_item">Av- Cll 100 #19-54 piso 8</p>
+                                    </div>
+ 
+                                    <div class="adress-content_item">
+                                     <label class="address-content_label" for="">Referencia</label>
+                                    <p class="address-content_item">Av- Cll 100 #19-54 piso 8</p>
+                                    </div>
+                                   
+                                    <div class="adress-content_item">
+                                        <a href="#" class="button button-primary size-l"><ion-icon name="trash-outline"></ion-icon></a>
+                                        <a href="#" class="button button-secondary size-l"><ion-icon name="create-outline"></ion-icon></a>
+                                    </div>
+
+                             
+                                    </div>
+
+                                 
+                                    
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-detail">
+                                 <p class="card-detail_title">Direcciones adicionales</p>
+                                </div>
+    
+                                <div class="card-content">
+                                    <div class="address-content">
+                                   <div class="adress-content_item">
+                                    <label class="address-content_label" for="">Nombre</label>
+                                    <p class="address-content_item">Maximiliano Lopez</p>
+                                   </div>
+
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Celular</label>
+                                    <p class="address-content_item">98451238431</p>
+                                    </div>
+                                    
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Municipio</label>
+                                    <p class="address-content_item">Municipio Name</p>
+                                    </div>
+                                    
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Departamento</label>
+                                    <p class="address-content_item">Departamento Name</p>
+                                    </div>
+
+                                    <div class="adress-content_item">
+                                        <label class="address-content_label" for="">Dirección</label>
+                                        <p class="address-content_item">Av- Cll 100 #19-54 piso 8</p>
+                                    </div>
+ 
+                                    <div class="adress-content_item">
+                                     <label class="address-content_label" for="">Referencia</label>
+                                    <p class="address-content_item">Av- Cll 100 #19-54 piso 8</p>
+                                    </div>
+                                   
+                                    <div class="adress-content_item">
+                                        <div class="columns">
+                                            <div class="column is-8">
+                                                <a href="#" class="button button-primary size-l"><ion-icon name="trash-outline"></ion-icon></a>
+                                        <a href="#" class="button button-secondary size-l"><ion-icon name="create-outline"></ion-icon></a>
+                                            </div>
+
+                                            <div class="column">
+                                                <a href="#" class="button button-outline size-l">Volver direccion principal</a>
+                                            </div>
+
+                                        </div>
+                                      
+                                    </div>
+
+                             
+                                    </div>
+
+                                 
+                                    
+                                </div>
+                            </div>
+                    
+                </div>
+
+
+                        </div> <!-- column end-->
+
+
+                    </div>
+                </div>
+             </div>
+          </div>  <!-- container div -->
+    </section>
+
+    <script src="../js/tabs.js"></script>
+    <script src="../js/edit.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+
+// Alphabet Input Component
+// -----------------------------------------------------------------------------
+.alphabet-input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+
+    &_letter {
+        width: 40px;
+        height: 40px;
+
+        // Modifiers
+        &-allstores {
+            width: 120px;
+        }
+    }
+
+    &_label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ccd1d4;
+        background-color: #e0e4e5;
+        margin: 0;
+        padding: 10px 11px;
+        font-size: $font-size-m;
+        color: $color-text-grey;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+            color: $color-white;
+        }
+
+        // Modifiers
+        &-selected {
+            background-color: $color-interface;
+            color: $color-white;
+            border: 1px solid $color-interface;
+        }
+    }
+
+    // Hide all input radios
+    input[type="radio"] {
+        display: none;
+    }
+}
+
+.stores-catalog_container {
+    .stores-catalog {
+        &_brands-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
+            text-align: center;
+            column-gap: 8px;
+            row-gap: 8px;
+
+            .card-logo-store {
+                .card-image {
+                    img {
+                        width: 100%;
+                        min-height: 80px;
+                    }
+                }
+            }
+        }
+        &_letter-container {
+            width: 10.33333% !important;
+        }
+
+        &_letter {
+            background-color: $color-secondary-dark;
+            color: $color-white;
+            padding: 3px 3px;
+            text-align: center;
+        }
+    }
+}
+
+@include respond(min-mobile) {
+    .alphabet-container {
+        .alphabet {
+            &-letters {
+                a {
+                    max-width: 42px;
+                }
+            }
+        }
+    }
+}
+
+@include respond(mobile) {
+    .stores-catalog_container {
+        .stores-catalog {
+            &_brands-container {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+    }
+
+    .alphabet-container {
+        .alphabet {
+            &-letters {
+                a {
+                    position: relative;
+                    align-content: flex-start;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+
+                    &.btn-allstores {
+                        max-width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond(min-desktop) {
+    .stores-catalog_container {
+        .stores-catalog {
+            &_letter-container {
+                width: 3.33333% !important;
+                &.stores-catalog_letter {
+                    padding: 6px 6px;
+                }
+            }
+        }
+    }
+}
+
+@include respond(tablet) {
+    .stores-catalog_container {
+        .stores-catalog {
+            &_letter-container {
+                width: 3.33333% !important;
+                &.stores-catalog_letter {
+                    padding: 3px 6px;
+                }
+            }
+        }
+    }
+}
+
+@include respond(portraid) {
+    .stores-catalog_container {
+        .stores-catalog {
+            &_letter-container {
+                width: 4.33333% !important;
+            }
+        }
+    }
+}

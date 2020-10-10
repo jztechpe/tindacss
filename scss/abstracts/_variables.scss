@@ -1,0 +1,72 @@
+//font-size
+$font-family:
+// Safari for OS X and iOS (San Francisco)
+    -apple-system,
+    // Chrome < 56 for OS X (San Francisco)
+    BlinkMacSystemFont,
+    // Windows
+    "Segoe UI",
+    // Android
+    "Roboto",
+    // Basic web fallback
+    "Helvetica Neue",
+    Arial, sans-serif,
+    // Emoji fonts
+    "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$family-primary: $font-family;
+$family-secondary: $font-family;
+
+$font-size-xs: 11px;
+$font-size-s: 12px;
+$font-size-m: 14px;
+$font-size-l: 16px;
+$font-size-xl: 18px;
+
+$font-subtitle-s: 19px;
+$font-subtitle-m: 24px;
+$font-subtitle-l: 32px;
+
+$font-weight-bold: 900;
+$font-weight-demibold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+
+//COLORS
+
+$color-primary: #cc1d39;
+$color-primary-light: #de0639;
+$color-primary-dark: #a2052a;
+
+$color-secondary: #3f535d;
+$color-secondary-dark: #2e3d44;
+
+$color-interface: #2269c9;
+$color-interface-dark: #1e59a9;
+
+$color-text: #222222;
+$color-text-grey: #656970;
+$color-text-light: #808d93;
+$color-white: #ffffff;
+
+$color-forms: #bfc6c9 !default;
+$color-light-forms: #e2e9ec;
+
+$background-color: #f2f4f4;
+
+$color-gold: #cdb989;
+
+//Inputs
+$border-size: 1px;
+
+//Buttons
+$btn-font-weight: 400;
+$btn-border-size: 1px;
+$btn-disabled-opacity: 0.65 !default;
+
+$box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+
+// Header
+$header-height: 80px;
