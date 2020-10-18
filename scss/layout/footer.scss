@@ -68,11 +68,10 @@
 
     .icon::after {
         content: "";
-        transform: rotate(-90deg);
+        transform: rotate(-180deg);
         width: 18px; // Must be 24px
-        height: 18px;
-        // TODO: Repair
-        // background-image: url(../JuntozEcomLibrary/scss/icons/chevron-down.svg);
+        height: 18px; 
+        background-image: url(https://cdn.juntoz-staging.com/ux-lifemiles/img/chevron-down.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -87,9 +86,7 @@
     // Modifiers
     &.is-active {
         .icon::after {
-            transform: rotate(0);
-            //TODO: Repair
-            // background-image: url(../JuntozEcomLibrary/scss/icons/chevron-down.svg);
+            transform: rotate(0deg);
         }
 
         .footer-item_content {
