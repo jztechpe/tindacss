@@ -3,10 +3,12 @@
     background-color: $color-white;
     border-top: 1px solid $color-light-forms;
     z-index: $z-index-1;
+    margin-top: 4rem;
 
     @include mq($from: lg) {
         padding: 40px 0 0;
         border-bottom: 1px solid $color-light-forms;
+        margin-top: 4rem;
     }
 
     .footer-header {
