@@ -1,10 +1,6 @@
 {
   "name": "@juntoz/tindacss",
-<<<<<<< HEAD
-  "version": "0.0.7",
-=======
-  "version": "0.0.8",
->>>>>>> 1df2d71b9355e49e638577c7b9e07e90577446a0
+  "version": "0.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
