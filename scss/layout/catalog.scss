@@ -43,7 +43,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        z-index: $z-index-2;
+        z-index: 1; // First fix menu index, then  $z-index-2
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -65,18 +65,18 @@
         }
 
         &.is-out-of-stock {
-            background-color: #656970;
+            background-color: #8c8c8c;
         }
     }
 
     // Modifiers
     &.is-out-of-stock {
         .card-image {
-            opacity: 0.75;
+            opacity: 0.5;
         }
 
         .card-catalog-content{
-            opacity: 0.65;
+            opacity: 0.5;
         }
     }
 }
