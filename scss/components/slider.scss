@@ -79,6 +79,19 @@ $slider-color-thumbnail-active: #929292 !default;
 
 .slider.product-slider {
     position: relative;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .slider-container{
+        width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    }
+
+    .tns-outer{
+        position: absolute;
+    }
 
     .slider-pages {
         padding: 10px 0;
@@ -87,7 +100,6 @@ $slider-color-thumbnail-active: #929292 !default;
 
     .slider-item {
         border: 1px solid $slider-color-thumbnail;
-        height: 320px;
 
         > img {
             object-fit: contain;
@@ -96,9 +108,6 @@ $slider-color-thumbnail-active: #929292 !default;
         }
 
 
-        @include mq($from: xl) {
-            height: 400px;
-         }
     }
 
     .slider-thumbnail {
@@ -106,7 +115,7 @@ $slider-color-thumbnail-active: #929292 !default;
         height: 60px;
 
         > img {
-            object-fit: cover;
+            object-fit: contain;
             width: 100%;
             height: 100%;
         }
