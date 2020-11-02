@@ -83,6 +83,10 @@ $slider-color-thumbnail-active: #929292 !default;
     max-width: 100%;
     margin: 0 auto;
 
+    @include mq($from: md) {
+        margin: 0;
+    }
+
     .slider-container{
         width: 100%;
     position: relative;
