@@ -2,7 +2,7 @@
     font-size: 1rem;
 
     .modal-card {
-        max-width: 350px;
+        max-width: 380px;
     }
 
     .modal-card-body {
@@ -13,13 +13,14 @@
 
     .confirm-dialog_header {
         margin-top: 15px;
+        padding-left: 12px;
     }
 
     .confirm-dialog_footer {
-        justify-self: end;
-
+        margin-top: 0.8rem;
         .button {
             font-size: 0.9emerror-illustration;
+            margin-right: 0.5rem;
         }
     }
 

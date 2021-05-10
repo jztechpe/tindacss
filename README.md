@@ -1,5 +1,5 @@
-# Ecommy CSS
-CSS Ecommerce library for next-generation web styling.
+# Tinda CSS
+Juntoz CSS library for ECommerce websites
 
 // Status from github
 
@@ -7,7 +7,7 @@ CSS Ecommerce library for next-generation web styling.
 
 # Quick install
 ```sh
-npm install ecommy
+npm install tinda
 ```
 
 **or**
@@ -15,16 +15,11 @@ npm install ecommy
 ### Yarn
 
 ```sh
-yarn add ecommy
+yarn add tinda
 ```
 
-### CDN
-
-[https://www.jsdelivr.com/package/npm/bulma](https://www.jsdelivr.com/package/npm/ecommy)
-
-
 # Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+TODO: Explain how other users and developers can contribute to make your code better.
 
 Feel free to raise an issue or submit a pull request.
 

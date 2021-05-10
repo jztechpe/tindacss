@@ -1,6 +1,6 @@
 {
-  "name": "@juntoz/tinda",
-  "version": "0.0.1",
+  "name": "@juntoz/tindacss",
+  "version": "0.0.17",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "build": "webpack --config ./webpack.config.js",
     "watch": "webpack --watch",
     "docs:build": "pug docs/src --out ./docs/dist && sass ./docs/src/scss/main.scss ./docs/dist/css/main.css",
-    "docs:dev": "concurrently --kill-others \"reload -b --dir ./docs/dist live-server\"  \"pug docs/src --out ./docs/dist --watch\" \"sass ./docs/src/scss/main.scss ./docs/dist/css/main.css --watch\""
+    "docs:dev": "concurrently --kill-others \"reload -b --dir ./docs/dist live-server\"  \"pug docs/src --out ./docs/dist --watch\" \"sass ./docs/src/scss/main.scss ./docs/dist/css/main.css --watch\"",
+    "prepublishOnly": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -32,5 +33,9 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "files": [
+    "dist/main.css",
+    "scss"
+  ]
 }

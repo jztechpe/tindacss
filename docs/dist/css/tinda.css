@@ -1,0 +1,18 @@
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 10 | @import "~sass-mq";
+ *    |         ^^^^^^^^^^
+ *    '
+ *   scss/vendor/_sass.mq.scss 10:9  @import
+ *   scss/tinda.scss 1:9             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502  @import \"~sass-mq\";\a    \2502          ^^^^^^^^^^\a    \2575 \a   scss/vendor/_sass.mq.scss 10:9  @import\a   scss/tinda.scss 1:9             root stylesheet";
+}
