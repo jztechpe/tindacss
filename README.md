@@ -5,9 +5,14 @@ Juntoz CSS library for ECommerce websites
 
 // Amazing banner
 
+# note about npm scope
+This package is published to jztechpe-pub which is our public scoped registry in npm.
+
+We had to do this like this because we have our own github packages private registry so it was not possible to combine them both during our development.
+
 # Quick install
 ```sh
-npm install tinda
+npm install @jztechpe-pub/tinda
 ```
 
 **or**
@@ -15,7 +20,7 @@ npm install tinda
 ### Yarn
 
 ```sh
-yarn add tinda
+yarn add @jztechpe-pub/tinda
 ```
 
 # Contribute
