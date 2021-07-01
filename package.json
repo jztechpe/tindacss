@@ -1,6 +1,6 @@
 {
   "name": "@jztechpe-pub/tindacss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Juntoz open source sass library for ecommerce websites",
   "main": "index.js",
   "scripts": {
