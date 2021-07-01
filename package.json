@@ -1,7 +1,7 @@
 {
   "name": "@jztechpe-pub/tindacss",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Juntoz open source sass library for ecommerce websites",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
