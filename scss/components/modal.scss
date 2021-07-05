@@ -1,55 +1,9 @@
 // Override default modal bulma styles 
 // https://github.com/jgthms/bulma/blob/master/sass/components/modal.sass
-$modal-card-head-background-color : $white;
+$modal-card-head-background-color : white;
 $modal-card-head-padding: 16px;
 $modal-card-body-padding: 16px;
 
-.modal{
-    
-}
-
 .modal{    
     z-index: $z-index-9;
-}
-
-.confirm-dialog {
-    font-size: 1rem;
-
-    .modal-card {
-        max-width: 380px;
-    }
-
-    .modal-card-body {
-        display: grid;
-        grid-template-rows: auto auto;
-        row-gap: 10px;
-    }
-
-    .confirm-dialog_header {
-        margin-top: 15px;
-        padding-left: 12px;
-    }
-
-    .confirm-dialog_footer {
-        margin-top: 0.8rem;
-        .button {
-            font-size: 0.9emerror-illustration;
-            margin-right: 0.5rem;
-        }
-    }
-
-    .modal-close {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-
-        &::before,
-        &::after {
-            background-color: #808d93;
-        }
-    }
-}
-
-.modal-card {
-    border-radius: 4px;
 }

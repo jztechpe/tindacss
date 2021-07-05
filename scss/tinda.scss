@@ -11,8 +11,9 @@
 $primary: $color-primary;
 
 // import bulma and override default styles
-@import "~bulma";
 @import "components/modal.scss";
+
+@import "~bulma";
 
 @import "base/inputs.scss";
 @import "base/reset.scss";
