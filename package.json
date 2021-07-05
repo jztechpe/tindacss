@@ -15,27 +15,26 @@
   "repository": "https://github.com/jztechpe/tindacss.git",
   "author": "JZTECHPE",
   "license": "ISC",
-  "dependencies": {
-    "bulma": "^0.9.3",
-    "concurrently": "^5.3.0",
-    "file-loader": "^6.0.0",
-    "jstransformer-highlight": "^2.0.0",
-    "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^4.14.1",
-    "pug": "^3.0.0",
-    "reload": "^3.1.1",
-    "sass-mq": "^5.0.1",
-    "style-loader": "^1.2.1"
-  },
   "files": [
     "dist/main.css",
     "scss"
   ],
+  "dependencies": {
+    "bulma": "^0.9.3"
+  },
   "devDependencies": {
+    "concurrently": "^6.2.0",
     "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "jstransformer-highlight": "^2.0.0",
+    "jstransformer-markdown-it": "^2.1.0",
     "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^6.0.1",
+    "pug": "^3.0.2",
+    "reload": "^3.2.0",
     "sass": "^1.35.1",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^12.1.0",
+    "sass-mq": "^5.0.1",
     "webpack": "^5.42.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
