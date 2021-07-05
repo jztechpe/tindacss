@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
     "start:dev": "webpack-dev-server",
-    "build": "webpack --config ./webpack.config.js",
+    "build": "webpack --mode production",
     "watch": "webpack --watch",
     "docs:build": "pug docs/src --out ./docs/dist && sass ./docs/src/scss/main.scss ./docs/dist/css/main.css",
     "docs:dev": "concurrently --kill-others \"reload -b --dir ./docs/dist live-server\"  \"pug docs/src --out ./docs/dist --watch\" \"sass ./docs/src/scss/main.scss ./docs/dist/css/main.css --watch\"",

@@ -1,3 +1,9 @@
+// Override default modal bulma styles 
+// https://github.com/jgthms/bulma/blob/master/sass/components/modal.sass
+$modal-card-head-background-color : $white;
+$modal-card-head-padding: 16px;
+$modal-card-body-padding: 16px;
+
 .modal{
     
 }

@@ -1,6 +1,10 @@
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
+@import "~bulma/sass/components/modal";
 
+@import "../components/modal.scss";
+
+// Rewrites for bulma
 $primary: $color-primary;
 
 @import "~bulma";
@@ -8,11 +12,3 @@ $primary: $color-primary;
 .card{
     box-shadow: unset;
 }
-
-// TODO: Check
-// .columns{
-//     margin-left: 0;
-//     margin-right: 0;
-//     margin-top: 0;
-//     margin-bottom: 0;
-// }
