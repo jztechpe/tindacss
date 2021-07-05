@@ -1,3 +1,11 @@
+.modal{
+    
+}
+
+.modal{    
+    z-index: $z-index-9;
+}
+
 .confirm-dialog {
     font-size: 1rem;
 
@@ -36,9 +44,6 @@
     }
 }
 
-.modal{    
-    z-index: $z-index-9;
-}
 .modal-card {
     border-radius: 4px;
 }

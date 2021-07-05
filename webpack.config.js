@@ -1,13 +1,13 @@
 const path = require('path');
 const isDevelopment = process.env.NODE_ENV !== 'production'; // TODO: Check right enviroment.
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: "./app.js",
   output: {
     path: path.join(__dirname, '/dist'),
     filename: "app.js",
+    clean: true,
   },
 
   devServer: {
@@ -17,7 +17,6 @@ module.exports = {
       poll: true 
     },
   },
-
 
   module: {
     rules: [
@@ -41,7 +40,6 @@ module.exports = {
   },
 
   plugins: [
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
