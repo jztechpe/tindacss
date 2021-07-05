@@ -23,32 +23,5 @@
         span{
             vertical-align: text-top;
         }
-    }
-
-   
-
-    
+    }  
 }
-
-.mobile-filter{
-    display: block;
-
-    @include mq($from: lg) {
-        display: none;
-     }
-}
-
-.desktop-filter{
-    display: none;
-
-    @include mq($from: lg) {
-        display: block;
-     }
-}
-
-
-
- 
- 
- 
- 
