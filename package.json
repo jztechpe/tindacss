@@ -1,43 +1,33 @@
 {
   "name": "@jztechpe-pub/tindacss",
   "version": "1.0.7",
+  "author": "JZTECHPE",
   "description": "Juntoz open source sass library for ecommerce websites",
-  "main": "index.js",
+  "main": "tinda.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "start:dev": "webpack-dev-server",
-    "build": "webpack --mode production",
-    "watch": "webpack --watch",
+    "build": "npm run build-sass && npm run build-cleancss",
+    "build-cleancss": "cleancss -o dist/tinda.min.css dist/tinda.css",
+    "build-sass": "node-sass --output-style expanded --source-map true ./tinda.scss dist/tinda.css",
     "docs:build": "pug docs/src --out ./docs/dist && sass ./docs/src/scss/main.scss ./docs/dist/css/main.css",
     "docs:dev": "concurrently --kill-others \"reload -b --dir ./docs/dist live-server\"  \"pug docs/src --out ./docs/dist --watch\" \"sass ./docs/src/scss/main.scss ./docs/dist/css/main.css --watch\"",
     "prepublishOnly": "npm run build"
   },
   "repository": "https://github.com/jztechpe/tindacss.git",
-  "author": "JZTECHPE",
   "license": "ISC",
   "files": [
-    "dist/main.css",
-    "scss"
+    "tinda.scss",
+    "scss",
+    "dist"
   ],
-  "dependencies": {
-    "bulma": "^0.9.3"
-  },
   "devDependencies": {
+    "bulma": "^0.9.3",
+    "sass-mq": "^5.0.1",
+    "clean-css-cli": "^5.3.0",
     "concurrently": "^6.2.0",
-    "css-loader": "^5.2.6",
-    "file-loader": "^6.2.0",
     "jstransformer-highlight": "^2.0.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "mini-css-extract-plugin": "^2.1.0",
     "node-sass": "^6.0.1",
     "pug": "^3.0.2",
-    "reload": "^3.2.0",
-    "sass": "^1.35.1",
-    "sass-loader": "^12.1.0",
-    "sass-mq": "^5.0.1",
-    "webpack": "^5.42.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "reload": "^3.2.0"
   }
 }

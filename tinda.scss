@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@import "scss/abstracts/mixins";
+@import "scss/abstracts/variables";
+@import "scss/abstracts/helpers.scss";
+@import "scss/abstracts/z-index.scss";
+
+@import "scss/vendor/sass.mq";
+@import "scss/vendor/bulma";
+
+@import "scss/base/inputs.scss";
+@import "scss/base/reset.scss";
+@import "scss/base/typography.scss";
+@import "scss/base/container.scss";
+@import "scss/base/table.scss";
+
+@import "scss/components/buttons.scss";
+@import "scss/components/cards.scss";
+@import "scss/components/header.scss";
+@import "scss/components/slider.scss";
+@import "scss/components/product-page.scss";
+@import "scss/components/breadcrums.scss";
+@import "scss/components/badge.scss";
+@import "scss/components/filter.scss";
+@import "scss/components/pagination.scss";
+@import "scss/components/menu.scss";
+@import "scss/components/shopcategories.scss";
+@import "scss/components/collapse.scss";
+@import "scss/components/widgets.scss";
+@import "scss/components/AlphabetComponent.scss";
+@import "scss/components/InputCounter.scss";
+@import "scss/components/SelectFirstImage.scss";
+@import "scss/components/SelectList.scss";
+@import "scss/components/Grid.scss";
+@import "scss/components/avatar.scss";
+@import "scss/components/switch.scss";
+@import "scss/components/steps.scss";
+@import "scss/components/tabs.scss";
+@import "scss/components/myAccount.scss";
+@import "scss/components/loading.scss";
+@import "scss/components/checkbox.scss";
+
+@import "scss/layout/header.scss";
+@import "scss/layout/navigation.scss";
+@import "scss/layout/catalog.scss";
+@import "scss/layout/footer.scss";
+@import "scss/layout/MainLayout.scss";

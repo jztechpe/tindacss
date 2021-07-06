@@ -13,8 +13,6 @@
         transform: translateY(-50%) rotate(180deg);
         width: 16px;
         height: 18px;
-        // TODO: Revive
-        // background-image: url(../JuntozEcomLibrary/scss/icons/minus.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -27,12 +25,8 @@
 .collapse-close {
     .collapse-item-title::after {
         transform: translateY(-50%) rotate(0deg);
-
         width: 16px;
         height: 18px;
-        //background-image: url(../scss/icons/plus.svg);
-        // TODO: Revive
-        // background-image: url(../JuntozEcomLibrary/scss/icons/plus.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -55,8 +49,6 @@
     transform: translateY(-50%) rotate(180deg);
     width: 16px;
     height: 18px;
-    // TODO: Revive
-    // background-image: url(../LifemilesTheme/src/icons/minus.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
