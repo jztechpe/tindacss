@@ -1,19 +1,12 @@
 @charset "utf-8";
 
-@import "vendor/sass.mq";
-
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "abstracts/helpers.scss";
 @import "abstracts/z-index.scss";
 
-// rewrites for bulma
-$primary: $color-primary;
-
-// import bulma and override default styles
-@import "components/modal.scss";
-
-@import "~bulma";
+@import "vendor/sass.mq";
+@import "vendor/bulma";
 
 @import "base/inputs.scss";
 @import "base/reset.scss";
