@@ -1,5 +1,5 @@
 .checkbox {
-  display: block;
+  display: inline-block;
   position: relative;
   padding-left: 1.6rem;
   margin-bottom: 0.5rem;
@@ -24,7 +24,6 @@
 
   input[type="checkbox"] {
     position: absolute;
-    opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
