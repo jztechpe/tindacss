@@ -50,37 +50,6 @@ textarea {
 	}
 }
 
-select,
-button,
-input {
-	font-family: inherit;
-	overflow: visible;
-	border:none;
-	/* Para safari , IOS*/
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
-	border-radius:0;
-	/* */
-	/* Para crome, le quita la fechita*/
-	&::-ms-expand {
-		display: none;
-	}
-	/* */
-	&:hover{
-		cursor: pointer;
-	}
-	&:focus {
-		outline:none;
-	}
-	
-	/* Para desaparecer las flechitas de los inputs number */
-	&::-webkit-outer-spin-button,
-	&::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0; 
-	}
-}
 
 input[type="submit"]:hover {
 	cursor: pointer;
