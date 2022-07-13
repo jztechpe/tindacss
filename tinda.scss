@@ -5,11 +5,12 @@
 @import "scss/abstracts/helpers.scss";
 @import "scss/abstracts/z-index.scss";
 
+@import "scss/base/normalize.scss";
+
 @import "scss/vendor/sass.mq";
 @import "scss/vendor/bulma";
 
 @import "scss/base/inputs.scss";
-@import "scss/base/reset.scss";
 @import "scss/base/typography.scss";
 @import "scss/base/container.scss";
 @import "scss/base/table.scss";
