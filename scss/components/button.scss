@@ -1,0 +1,9 @@
+// https://github.com/jgthms/bulma/blob/master/sass/elements/button.sass
+
+.button {
+    &.is-accent {
+        background-color: $color-accent;
+        border-color: transparent;
+        color: #fff; // TODO: use variable
+    }
+}
