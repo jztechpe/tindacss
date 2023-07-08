@@ -28,7 +28,7 @@
     "concurrently": "^6.2.0",
     "jstransformer-highlight": "^2.0.0",
     "jstransformer-markdown-it": "^2.1.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^9.0.0",
     "pug": "^3.0.2",
     "reload": "^3.2.0"
   }
